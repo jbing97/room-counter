@@ -1,6 +1,6 @@
 package roomcount.database;
 
-public class InitDatabaseInterface {
+public class Database_Init_Interface {
 	
 	
     private MongoDatabase _db = getConnection().getDatabase(database_name);
