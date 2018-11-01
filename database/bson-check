@@ -1,104 +1,54 @@
 db.createCollection( "room", {
-
    validator: { $jsonSchema: {
-
       bsonType: "object",
-
       required: ["number"],
-
       required: ["string"],
-
       properties: {
-
          roomName: {
-
             bsonType : "string",
-
             description: "must be a string"
-
          },
-
          roomCap: {
-
             bsonType: "int",
-
             description: "must be a number"
-
          }
-
         }
-
    }}
-
 } )
 
 db.createCollection( "session", {
-
    validator: { $jsonSchema: {
-
       bsonType: "object",
-
       properties: {
-
             sessionName: {
-
             bsonType: "string",
-
             description: "must be a string and is required"
-
          },
-
          sessionNumber: {
-
             bsonType: "int",
-
             description: "must be a number"
-
          },
-
          roomCount1: {
-
             bsonType : "int",
-
             description: "must be a number"
-
          },
-
          roomCount2: {
-
             bsonType: "int",
-
             description: "must be a number"
-
          },
-
          roomCount3: {
-
             bsonType: "int",
-
             description: "must be a number"
-
          },
-
          sessionSpeaker: {
-
             bsonType: "string",
-
             description: "must be a string"
-
          },
-
          sessionDate: {
-
             bsonType: "int",
-
             description: "must be a number"
-
          },
-
       }
-
    } }
-
 } )
 
